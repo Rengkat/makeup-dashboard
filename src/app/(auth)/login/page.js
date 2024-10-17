@@ -17,12 +17,12 @@ const Login = () => {
           <input
             placeholder="Enter email"
             type="email"
-            className="mt-5 block w-full border-[1px] border-gray-400 py-4 px-6 "
+            className="rounded-md mt-5 block w-full border-[1px] border-gray-400 py-4 px-6 "
           />
           <input
             placeholder="Enter password"
             type="password"
-            className="mt-5 block w-full border-[1px] border-gray-400 py-4 px-6 "
+            className="rounded-md mt-5 block w-full border-[1px] border-gray-400 py-4 px-6 "
           />
           <button className="w-full bg-dark-gold text-2xl shadow-md font-semibold text-white py-4 rounded-md my-5">
             Login
