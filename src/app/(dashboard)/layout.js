@@ -11,7 +11,7 @@ export default function DashboardLayout({ children }) {
         <aside className="bg-lighter-gold h-screen w-[20rem] fixed left-0 bottom-0 shadow-md">
           <SideBar />
         </aside>
-        <main className="ml-[20rem] mt-[6rem]">{children}</main>
+        <main className="ml-[20rem] mt-[6rem] p-5">{children}</main>
       </div>
     </div>
   );
