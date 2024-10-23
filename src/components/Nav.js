@@ -30,7 +30,7 @@ const Nav = () => {
   };
 
   return (
-    <div className="h-[6rem] flex justify-between items-center py-2 px-[5rem] bg-white shadow-md">
+    <div className="h-[6rem] flex justify-between items-center py-2 px-[5rem] bg-lighter-gold shadow-md">
       {/* Logo */}
       <Image src={"/Fullbeauty.svg"} alt="logo" height={500} width={500} className="w-[6%]" />
 

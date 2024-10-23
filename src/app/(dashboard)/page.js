@@ -1,3 +1,4 @@
+import LineChartComp from "@/components/LineChart";
 import { Fragment } from "react";
 
 export default function Home() {
@@ -60,10 +61,11 @@ export default function Home() {
         {/* Appointments Trend Chart */}
         <div className="border-[1px] rounded-md shadow-md p-5">
           <h1 className="text-xl font-semibold mb-3">Appointments Trend</h1>
-          <div className="h-40 bg-gray-200 flex items-center justify-center">
-            {/* Placeholder for Line Chart */}
-            <p>Line chart: Appointments over time</p>
-          </div>
+          {/* <div className="h-40 bg-gray-200 flex items-center justify-center"> */}
+          {/* Placeholder for Line Chart */}
+          {/* <p>Line chart: Appointments over time</p> */}
+          <LineChartComp />
+          {/* </div> */}
         </div>
 
         {/* Sales Trend Chart */}
