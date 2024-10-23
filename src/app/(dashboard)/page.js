@@ -1,5 +1,10 @@
-import LineChartComp from "@/components/LineChart";
+import BarChartComponent from "@/components/BarChart";
+import LineChartComp from "@/components/ComposedLineChart";
+import PieChartComponent from "@/components/PieChart";
+import SimpleLineChart from "@/components/SimpleLineChart";
 import { Fragment } from "react";
+import ShapePieChart from "../../components/ShapePieChart";
+import SingleLineChart from "../../components/SingleLineChart";
 
 export default function Home() {
   return (
@@ -52,10 +57,14 @@ export default function Home() {
         {/* Revenue Breakdown Chart */}
         <div className="border-[1px] rounded-md shadow-md p-5">
           <h1 className="text-xl font-semibold mb-3">Revenue Breakdown</h1>
-          <div className="h-40 bg-gray-200 flex items-center justify-center">
-            {/* Placeholder for Pie Chart */}
-            <p>Pie chart: Services vs Products</p>
+          {/* <div className="h-40 bg-gray-200 flex items-center justify-center"> */}
+          {/* Placeholder for Pie Chart */}
+          <p>Pie chart: Services vs Products</p>
+          <div className="flex">
+            <PieChartComponent />
+            <PieChartComponent />
           </div>
+          {/* </div> */}
         </div>
 
         {/* Appointments Trend Chart */}
@@ -71,19 +80,21 @@ export default function Home() {
         {/* Sales Trend Chart */}
         <div className="border-[1px] rounded-md shadow-md p-5">
           <h1 className="text-xl font-semibold mb-3">Sales Trend</h1>
-          <div className="h-40 bg-gray-200 flex items-center justify-center">
-            {/* Placeholder for Line Chart */}
-            <p>Line chart: Sales over time</p>
-          </div>
+          {/* <div className="h-40 bg-gray-200 flex items-center justify-center"> */}
+          {/* Placeholder for Line Chart */}
+          <p>Line chart: Sales over time</p>
+          <SimpleLineChart />
+          {/* </div> */}
         </div>
 
         {/* Popular Services Bar Chart */}
         <div className="border-[1px] rounded-md shadow-md p-5">
           <h1 className="text-xl font-semibold mb-3">Popular Services</h1>
-          <div className="h-40 bg-gray-200 flex items-center justify-center">
-            {/* Placeholder for Bar Chart */}
-            <p>Bar chart: Most booked services</p>
-          </div>
+          {/* <div className="h-40 bg-gray-200 flex items-center justify-center"> */}
+          {/* Placeholder for Bar Chart */}
+          <p>Bar chart: Most booked services</p>
+          <BarChartComponent />
+          {/* </div> */}
         </div>
       </div>
 
@@ -92,19 +103,21 @@ export default function Home() {
         {/* Customer Growth Rate */}
         <div className="border-[1px] rounded-md shadow-md p-5">
           <h1 className="text-xl font-semibold mb-3">Customer Growth Rate</h1>
-          <div className="h-40 bg-gray-200 flex items-center justify-center">
-            {/* Placeholder for Growth Rate Chart */}
-            <p>Line chart: Monthly client growth</p>
-          </div>
+          {/* <div className="h-40 bg-gray-200 flex items-center justify-center"> */}
+          {/* Placeholder for Growth Rate Chart */}
+          <p>Line chart: Monthly client growth</p>
+          <SingleLineChart />
+          {/* </div> */}
         </div>
 
         {/* Service Type Distribution */}
         <div className="border-[1px] rounded-md shadow-md p-5">
           <h1 className="text-xl font-semibold mb-3">Service Type Bookings</h1>
-          <div className="h-40 bg-gray-200 flex items-center justify-center">
-            {/* Placeholder for Pie Chart */}
-            <p>Pie chart: In-spa vs Home services</p>
-          </div>
+          {/* <div className="h-40 bg-gray-200 flex items-center justify-center"> */}
+          {/* Placeholder for Pie Chart */}
+          <p>Pie chart: In-spa vs Home services</p>
+          <ShapePieChart />
+          {/* </div> */}
         </div>
       </div>
 
