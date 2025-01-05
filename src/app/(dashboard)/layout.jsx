@@ -8,10 +8,10 @@ export default function DashboardLayout({ children }) {
         <Nav />
       </nav>
       <div>
-        <aside className="bg-lighter-gold h-screen w-[20rem] fixed left-0 bottom-0 shadow-md">
+        <aside className="bg-lighter-gold h-screen w-[20rem] hidden lg:block fixed left-0 bottom-0 shadow-md">
           <SideBar />
         </aside>
-        <main className="ml-[20rem] mt-[6rem] p-5">{children}</main>
+        <main className="ml-0 lg:ml-[20rem] mt-[6rem] p-5">{children}</main>
       </div>
     </div>
   );
