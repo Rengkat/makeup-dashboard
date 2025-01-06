@@ -13,9 +13,10 @@ const appSlice = createSlice({
     isUserLoggedIn: isUserLoggedIn(),
   },
   reducers: {
-    login: (state, action) => {
+    loginUser: (state, action) => {
       state.user = action.payload;
       addUserToLocalStorage(action.payload);
+      state.isUserLoggedIn = true;
     },
     logout: (state) => {
       state.user = null;
@@ -24,5 +25,5 @@ const appSlice = createSlice({
     },
   },
 });
-export const { login, logout } = appSlice.actions;
+export const { loginUser, logout } = appSlice.actions;
 export default appSlice.reducer;
